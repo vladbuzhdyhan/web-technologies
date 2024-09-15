@@ -1,0 +1,41 @@
+.red {
+    color: red;
+}
+
+#line {
+    border: 2px solid green;
+    width: 500px;
+}
+
+#title {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+    display: inline;
+}
+
+.line-through {
+    text-decoration: line-through;
+    display: inline;
+}
+
+#yellow {
+    display: inline;
+    background: yellow;
+}
+
+#italic {
+    font-style: italic;
+}
+
+body {
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+    display: inline;
+}
