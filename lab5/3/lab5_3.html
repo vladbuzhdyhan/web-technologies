@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form method="get" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Особиста інформація</legend>
+
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" placeholder="Введіть своє ім'я" required tabindex="1"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]$" autocomplete="off" tabindex="2"><br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" placeholder="Введіть пароль" required pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,}" tabindex="3"><br>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+380XXXXXXXXX" required pattern="\+380\d{9}" tabindex="4"><br>
+
+        <label for="dob">Дата народження:</label>
+        <input type="date" id="dob" name="dob" required tabindex="5"><br>
+
+        <label for="bio">Біографія:</label><br>
+        <textarea id="bio" name="bio" rows="5" cols="30" placeholder="Розкажіть про себе..." tabindex="6"></textarea><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Виберіть свій статус</legend>
+        <label><input type="radio" name="status" value="first" tabindex="7">1 курс</label><br>
+        <label><input type="radio" name="status" value="second" tabindex="8">2 курс</label><br>
+        <label><input type="radio" name="status" value="third" tabindex="9">3 курс</label><br>
+        <label><input type="radio" name="status" value="fourth" tabindex="10">4 курс</label><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Стать</legend>
+        <label><input type="radio" name="gender" value="male" checked required tabindex="11">Чоловік</label><br>
+        <label><input type="radio" name="gender" value="female" tabindex="12">Жінка</label><br>
+        <label><input type="radio" name="gender" value="other" tabindex="13">Інше</label><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Захоплення</legend>
+        <label><input type="checkbox" name="hobby" value="reading" tabindex="14">Читання</label><br>
+        <label><input type="checkbox" name="hobby" value="sports" tabindex="15">Спорт</label><br>
+        <label><input type="checkbox" name="hobby" value="music" tabindex="16">Музика</label><br>
+        <label><input type="checkbox" name="hobby" value="travel" tabindex="17">Подорожі</label><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Рівень досвіду</legend>
+        <label for="experience">Виберіть рівень:</label>
+        <select id="experience" name="experience" required tabindex="18">
+            <option value="no">Немає</option>
+            <option value="beginner">1-3 місяця</option>
+            <option value="intermediate" selected>3-6 місяців</option>
+            <option value="advanced">6-12 місяців</option>
+            <option value="experienced">Більше року</option>
+        </select><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Мови програмування</legend>
+        <label for="languages">Виберіть мови:</label>
+        <select id="languages" name="languages[]" multiple size="6" required tabindex="19">
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="javascript">JavaScript</option>
+            <option value="csharp">C#</option>
+            <option value="cpp">C++</option>
+            <option value="ruby">Ruby</option>
+        </select><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Робочі групи</legend>
+        <label for="workgroups">Виберіть групу:</label>
+        <select id="workgroups" name="workgroups" tabindex="20">
+            <optgroup label="Розробники">
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+                <option value="fullstack">Fullstack</option>
+            </optgroup>
+            <optgroup label="Тестувальники">
+                <option value="qa">QA</option>
+                <option value="automation">Automation</option>
+                <option value="manual">Manual</option>
+            </optgroup>
+            <optgroup label="Проект-менеджери">
+                <option value="scrum">Scrum Master</option>
+                <option value="product">Product Manager</option>
+                <option value="project">Project Manager</option>
+            </optgroup>
+            <optgroup label="Аналітики">
+                <option value="business">Business Analyst</option>
+                <option value="data">Data Analyst</option>
+                <option value="security">Security Analyst</option>
+            </optgroup>
+        </select><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Улюблені фільми</legend>
+        <label for="movies">Введіть назву:</label>
+        <input list="movies" id="movies-list" name="movies" tabindex="21">
+        <datalist id="movies">
+            <option value="The Shawshank Redemption"></option>
+            <option value="The Godfather"></option>
+            <option value="Inception"></option>
+            <option value="Pulp Fiction"></option>
+            <option value="The Dark Knight"></option>
+        </datalist><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Завантаження файлів</legend>
+        <label for="file-upload">Завантажте аудіофайли:</label>
+        <input type="file" id="file-upload" name="audio_files" accept="audio/*" multiple tabindex="22"><br>
+    </fieldset>
+
+    <button type="submit" tabindex="23">Надіслати</button>
+    <button type="reset" tabindex="24">Скинути</button>
+</form>
+</body>
+</html>
