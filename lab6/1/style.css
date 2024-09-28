@@ -1,0 +1,17 @@
+#text {
+    column-count: 3;
+    column-gap: 35px;
+    column-rule: 5px dotted red;
+}
+
+.column-image-right {
+    width: 200px;
+    margin: 10px;
+    float: right;
+}
+
+.column-image-left {
+    width: 200px;
+    margin: 20px;
+    float: left;
+}
