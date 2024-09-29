@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#first {
+    background-color: #5e1212;
+    color: white;
+    padding: 10px 30px 30px 30px;
+    border-radius: 70px;
+    margin-bottom: 30px;
+}
+
+#first > h3 {
+    text-align: center;
+}
+
+#second {
+    background-color: #975959;
+    color: white;
+    padding: 10px 30px 30px 30px;
+    border-radius: 70px;
+}
+
+#second > h3 {
+    text-align: center;
+}
+
+#second > div {
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+#second > div > div {
+    background-color: #ac3131;
+    border-radius: 70px;
+    width: 35%;
+    padding: 10px 40px 20px 40px;
+}
+
+#second > div > div > h3 {
+    text-align: center;
+}
