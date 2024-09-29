@@ -1,0 +1,45 @@
+#wrapper {
+    border-spacing: 50px;
+}
+
+.row {
+    display: table;
+}
+
+.row > div {
+    width: 250px;
+    height: 300px;
+    border: 1px solid green;
+    display: table-cell;
+    padding: 0 20px 20px 20px;
+}
+
+.row > div > img {
+    width: 100%;
+}
+
+.row:nth-child(1) > div:nth-child(1) {
+    box-shadow: -10px -10px 5px green;
+}
+.row:nth-child(1) > div:nth-child(2) {
+    box-shadow: 0 0 10px 10px green;
+}
+
+.row:nth-child(1) > div:nth-child(3) {
+    box-shadow: 5px 5px 10px limegreen;
+}
+
+.row:nth-child(2) > div:nth-child(1) {
+    box-shadow: 0 0 50px 5px limegreen;
+}
+.row:nth-child(2) > div:nth-child(2) {
+    box-shadow: 5px 0 blue,
+                0 5px orange,
+                -5px 0 red,
+                0 -5px green;
+}
+
+.row:nth-child(2) > div:nth-child(3) {
+    box-shadow: 0 -5px orange,
+                0 5px green;
+}
