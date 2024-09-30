@@ -61,13 +61,22 @@
 }
 
 .row:nth-child(4) > div:nth-child(1) {
-
+    border: 20px solid;
+    border-image: url("assets/circle.png");
+    border-image-slice: 55;
+    border-image-repeat: stretch;
 }
 
 .row:nth-child(4) > div:nth-child(2) {
-
+    border: 20px solid;
+    border-image: url("assets/circle.png");
+    border-image-slice: 40;
+    border-image-repeat: round;
 }
 
 .row:nth-child(4) > div:nth-child(3) {
-
+    border: 20px solid;
+    border-image: url("assets/circle.png");
+    border-image-slice: 40;
+    border-image-repeat: stretch;
 }
