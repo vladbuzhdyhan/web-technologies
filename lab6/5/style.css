@@ -1,0 +1,64 @@
+#wrapper {
+    border-spacing: 50px;
+}
+
+.row {
+    display: table;
+}
+
+.row > div {
+    width: 300px;
+    height: 400px;
+    display: table-cell;
+    padding: 20px;
+    text-align: center;
+}
+
+.row > div > img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+
+.row:nth-child(1) > div:nth-child(1) {
+    background-image: linear-gradient(to bottom left, orange, blue, yellow, green);
+}
+
+.row:nth-child(1) > div:nth-child(2) {
+
+}
+
+.row:nth-child(1) > div:nth-child(3) {
+    background-image: repeating-linear-gradient(to right,
+    green, white 17%,
+    blue 17%, yellow 34%
+    );
+}
+
+.row:nth-child(2) > div:nth-child(1) {
+    background-image:
+            linear-gradient(-45deg, yellow 35%, transparent 35%),
+            linear-gradient(45deg, green 25%, transparent 25%),
+            radial-gradient(circle at bottom, white, transparent 100%),
+            linear-gradient(to left, blue, orange);
+}
+
+.row:nth-child(2) > div:nth-child(2) {
+    background-image: repeating-linear-gradient(
+            160deg,
+            #ff0000,
+            #ff7f00 3%,
+            #ffff00 6%,
+            #00ff00 9%,
+            #0000ff 12%,
+            #8b00ff 15%,
+            transparent 20%,
+            transparent 23%
+    ),
+    repeating-linear-gradient(
+            200deg,
+            white,
+            brown 20%,
+            transparent 40%
+    );
+}
