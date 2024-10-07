@@ -25,7 +25,12 @@
 }
 
 .row:nth-child(1) > div:nth-child(2) {
-
+    background-color: #eee;
+    background-image:
+            linear-gradient(45deg, green 15%, transparent 25%, transparent 75%, orange 65%, blue),
+            linear-gradient(45deg, yellow 20%, transparent 25%, transparent 75%, purple 75%, orange);
+    background-position: 0 0, 57px 57px;
+    background-size: 114px 114px;
 }
 
 .row:nth-child(1) > div:nth-child(3) {
@@ -44,21 +49,12 @@
 }
 
 .row:nth-child(2) > div:nth-child(2) {
-    background-image: repeating-linear-gradient(
-            160deg,
-            #ff0000,
-            #ff7f00 3%,
-            #ffff00 6%,
-            #00ff00 9%,
-            #0000ff 12%,
-            #8b00ff 15%,
-            transparent 20%,
-            transparent 23%
-    ),
-    repeating-linear-gradient(
-            200deg,
-            white,
-            brown 20%,
-            transparent 40%
-    );
+    background:
+            repeating-linear-gradient(-190deg, rgba(255, 0, 0, 0.5) 40px, rgba(255, 153, 0, 0.5) 80px,
+            rgba(255, 255, 0, 0.5) 120px, rgba(0, 255, 0, 0.5) 160px, rgba(0, 0, 255, 0.5) 200px,
+            rgba(75, 0, 130, 0.5) 240px, rgba(238, 130, 238, 0.5) 280px, rgba(255, 0, 0, 0.5) 300px),
+            repeating-linear-gradient(-190deg, rgba(255, 0, 0, 0.5) 30px, rgba(255, 153, 0, 0.5) 60px,
+            rgba(255, 255, 0, 0.5) 90px, rgba(0, 255, 0, 0.5) 120px, rgba(0, 0, 255, 0.5) 150px,
+            rgba(75, 0, 130, 0.5) 180px, rgba(238, 130, 238, 0.5) 210px, rgba(255, 0, 0, 0.5) 230px),
+            repeating-linear-gradient(23deg, red 50px, orange 100px, yellow 150px, green 200px, blue 250px, indigo 300px, violet 350px, red 370px);
 }
