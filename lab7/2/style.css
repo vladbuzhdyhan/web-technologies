@@ -1,0 +1,59 @@
+div {
+    text-align: center;
+    font-size: 30px;
+}
+
+#one-one {
+    position: absolute;
+    top: 280px;
+    left: 50px;
+    width: 200px;
+    height: 50px;
+    background-color: green;
+    border: 2px solid black;
+    padding-top: 10px;
+}
+
+#one-two {
+    position: absolute;
+    top: 280px;
+    left: 305px;
+    width: 200px;
+    height: 50px;
+    background-color: green;
+    border: 2px solid black;
+    padding-top: 10px;
+    z-index: 2;
+}
+
+#two-one {
+    position: absolute;
+    top: 30px;
+    left: 270px;
+    width: 270px;
+    height: 330px;
+    background-color: blue;
+    border: 2px solid black;
+    color: white;
+    visibility: hidden;
+}
+
+#two-two {
+    position: absolute;
+    top: 30px;
+    left: 570px;
+    width: 270px;
+    height: 330px;
+    background-color: blue;
+    border: 2px solid black;
+    color: white;
+    visibility: hidden;
+}
+
+#one-one:hover ~ #two-one {
+    visibility: visible;
+}
+
+#one-two:hover ~ #two-two {
+    visibility: visible;
+}
