@@ -1,0 +1,38 @@
+div {
+    width: 400px;
+    height: 70px;
+    border: 2px solid black;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 30px;
+}
+
+div:nth-child(1) {
+    position: absolute;
+    top: 20px;
+    left: 390px;
+    background-color: blue;
+    color: white;
+}
+
+div:nth-child(2) {
+    position: absolute;
+    top: 20px;
+    left: 810px;
+    background-color: green;
+}
+
+div:nth-child(3) {
+    position: absolute;
+    top: 130px;
+    left: 390px;
+    background-color: green;
+}
+
+div:nth-child(4) {
+    position: absolute;
+    top: 130px;
+    left: 810px;
+    background-color: blue;
+    color: white;
+}
