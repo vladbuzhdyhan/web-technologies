@@ -1,0 +1,200 @@
+* {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+label {
+    color: white;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+button {
+    font-size: 18px;
+    width: 130px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 50px;
+}
+
+#reset {
+    border: solid 3px #e64a19;
+    color: #e64a19;
+}
+
+#submit {
+    border: solid 3px #0097a7;
+    color: #0097a7;
+}
+
+input {
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    text-indent: 20px;
+    border-radius: 10px;
+    opacity: 0.6;
+    border: 4px none;
+    width: 250px;
+    height: 30px;
+}
+
+textarea {
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    text-indent: 20px;
+    border-radius: 10px;
+    opacity: 0.6;
+    border: 0;
+    width: 540px;
+    height: 46px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 620px;
+    border: solid 20px #868686;
+    padding: 0 20px 20px 20px;
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+    color: #7d21b3;
+    font-weight: 700;
+    font-style: italic;
+    margin: 20px;
+}
+
+textarea:hover {
+    box-shadow: 0 0 10px 10px rgba(233, 27, 154, 0.6);
+}
+
+#submit:hover {
+    border: 3px #0097a7 solid;
+    color: white;
+    background-color: #0097a7;
+    border-radius: 15px;
+}
+
+#submit:active {
+    border: 3px #ecfd00 solid;
+    background-color: #014950;
+    border-radius: 25px;
+    position: relative;
+}
+
+#reset:hover {
+    border: 3px #e64a19 solid;
+    color: white;
+    background-color: #e64a19;
+    border-radius: 15px;
+}
+
+#reset:active {
+    border: 3px #ecfd00 solid;
+    background-color: #a02904;
+    border-radius: 25px;
+    position: relative;
+}
+
+.text:hover {
+    border-bottom: 4px #fbff00 inset;
+}
+
+.text:focus {
+    border-bottom: 4px #ffa600 inset;
+}
+
+.password:hover {
+    border-bottom: 4px #1eff00 inset;
+}
+
+.password:focus {
+    border-bottom: 4px #00ffea inset;
+}
+
+.input-group {
+    width: 48%;
+    text-align: left;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: right;
+}
+
+h1:first-letter {
+    font-size: 50px;
+    color: pink;
+}
+
+#legend:hover h1:nth-child(1) {
+    display: none;
+}
+
+#legend:hover h1:nth-child(2) {
+    display: block;
+}
+
+#legend h1:nth-child(1) {
+    display: block;
+}
+
+#legend h1:nth-child(2) {
+    display: none;
+}
+
+#legend::before {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: red;
+    top: 100%;
+    right: 0;
+}
+
+#legend h1:nth-child(1)::after {
+    content: ' ';
+    width: 25%;
+    height: 2px;
+    position: absolute;
+    background-color: red;
+    top: 30px;
+    right: 0;
+}
+
+#legend h1:nth-child(1)::before {
+    content: ' ';
+    width: 25%;
+    height: 2px;
+    position: absolute;
+    background-color: red;
+    top: 30px;
+    left: 0;
+}
+
+#legend:hover::before {
+    background-color: lawngreen;
+    width: 100%;
+}
+
+#legend {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+    z-index: 5;
+    width: 100%;
+    background-color: black;
+}
